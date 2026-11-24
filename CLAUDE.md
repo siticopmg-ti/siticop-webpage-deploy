@@ -16,6 +16,10 @@ O site novo (Next.js) e o CMS (Payload, na EC2) ainda não começaram. Quando
 começarem, o repositório passa a ter `site/` e `cms/` ([G05](../docs/adr/G05-site-e-cms.md)).
 
 - Branches: `main` (produção) e `develop`.
+- Publicação **provisória pelo espelho** `siticopmg-ti/siticop-webpage-deploy`
+  (o Hobby da Vercel não publica repositório privado de organização): o push
+  aqui dispara `.github/workflows/mirror-vercel.yml`. Ver "Publicação" no
+  `README.md`. Nunca editar o espelho direto.
 - Rodar: `npm run dev` (Node 22, sem `npm install`), em http://localhost:3000.
 
 ## Regras
